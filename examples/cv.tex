@@ -1,0 +1,119 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{red}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{polski}
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Marcin}{Parafiniuk}
+\title{CV}                               % optional, remove / comment the line if not wanted
+\address{Niemcewicza 19a}{02-306}{Warszawa}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+% \phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{marcin.parafiniuk@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+% \social[linkedin]{john.doe}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{capturcus}                              % optional, remove / comment the line if not wanted
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{You don't have to learn LaTeX, if you can use Google}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2013--now}{Masters}{University of Warsaw}{Warsaw}{}{\textit{pursuing}}  % arguments 3 to 6 can be left empty
+
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2015--now}{Software engineer}{University of Warsaw}{Warsaw}{}{Creation and maintenance of software projects, sometimes managing a small team.\newline{}%
+Projects include (but are not limited to):%
+\begin{itemize}%
+\item a system for identity management for all students and employees on the Uni (300k people) [golang, python, angular]
+\item database migrations with hundreds of thousands of records [python]
+\item a project for managing WiFi users on the Uni [golang, angular]
+\item backend for a library project [golang]
+\item my own Golang webframework (also used by some of my coworkers) [golang]
+\item backend for a notification system (messenger, email) [golang]
+\item a project for employee skill inventory [golang, angular]
+\item a system for displaying courses next to rooms [python, js]
+\item a project for managing programming tasks (used to this day by me and some of my coworkers) [golang, react]
+\item a task manager for network management [python]
+\item a search engine/archive - a sizeable project with many modules [python, golang, react]
+\end{itemize}}
+\cventry{2015}{Software engineering intern}{Intel}{Gdańsk}{}{Tweaking build systems, merging modules [c, cpp, Makefile, CMake]}
+\subsection{University projects}
+\textit{(as project manager)}
+\begin{itemize}
+\item 6 months, 4 people, small game, maximum points scored [java]
+\item 10 months, 4 people, a notification system with frontend in Android [java, python]
+\end{itemize}
+
+\section{Languages}
+\cvitemwithcomment{English}{fluent}{}
+\cvitemwithcomment{French}{basic}{}
+\cvitemwithcomment{Polish}{native}{}
+
+\section{Computer skills}
+\cvdoubleitem{golang}{good}{python}{good}
+\cvdoubleitem{javascript, typescript}{good}{sql}{medium}
+\cvdoubleitem{c++}{medium}{java}{medium}
+\cvdoubleitem{bash}{medium}{php, R}{basic}
+
+
+\cvitem{Frameworks}{Qt, Django, Flask, Android, Angular, React}
+\cvitem{Databases}{mysql, postgresql, elasticsearch}
+\cvitem{Toolchains}{msvc, gcc + Makefile, CMake, webpack}
+\cvitem{cvs}{git, perforce, svn}
+\cvitem{operating systems}{Linux [good], Windows [medium]}
+
+\section{Interests}
+\cvitem{Filmmaking}{a few minor productions, an ad for a University organization}
+\cvitem{Student council}{I help with finances, applications for funding and such}
+\cvitem{Writing}{I have written a few short stories}
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+%% end of file `template.tex'.
