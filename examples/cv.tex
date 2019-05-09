@@ -28,7 +28,7 @@
 \name{Marcin}{Parafiniuk}
 \title{CV}                               % optional, remove / comment the line if not wanted
 \address{Niemcewicza 19a}{02-306}{Warszawa}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-% \phone[mobile]{+1~(234)~567~890}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{691 950 413}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 % \phone[fixed]{+2~(345)~678~901}
 % \phone[fax]{+3~(456)~789~012}
 \email{marcin.parafiniuk@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -62,7 +62,8 @@
 \makecvtitle
 
 \section{Education}
-\cventry{2013--now}{Masters}{University of Warsaw}{Warsaw}{}{\textit{pursuing}}  % arguments 3 to 6 can be left empty
+\cventry{2017--now}{Masters of Psychology}{University of Warsaw}{Warsaw}{}{Pursuing}
+\cventry{2013--2017}{Bachelor of Computer Science}{University of Warsaw}{Warsaw}{}{}
 
 
 \section{Experience}
@@ -70,19 +71,18 @@
 \cventry{2015--now}{Software engineer}{University of Warsaw}{Warsaw}{}{Creation and maintenance of software projects, sometimes managing a small team.\newline{}%
 Projects include (but are not limited to):%
 \begin{itemize}%
-\item a system for identity management for all students and employees on the Uni (300k people) [golang, python, angular]
-\item database migrations with hundreds of thousands of records [python]
-\item a project for managing WiFi users on the Uni [golang, angular]
-\item backend for a library project [golang]
-\item my own Golang webframework (also used by some of my coworkers) [golang]
-\item backend for a notification system (messenger, email) [golang]
-\item a project for employee skill inventory [golang, angular]
-\item a system for displaying courses next to rooms [python, js]
-\item a project for managing programming tasks (used to this day by me and some of my coworkers) [golang, react]
-\item a task manager for network management [python]
-\item a search engine/archive - a sizeable project with many modules [python, golang, react]
+\item A system for identity management for all students and employees on the Uni (300k people) [golang, python, angular]
+\item Database migrations with hundreds of thousands of records [python]
+\item A project for managing WiFi users on the University of Warsaw (fullstack) [golang, angular]
+\item My own Golang webframework (also used by some of my coworkers) [golang]
+\item Backend for a notification system (messenger, email) [golang]
+\item A project for employee skill level assessment/confirmation (like on LinkedIn) [golang, angular]
+\item A system for displaying course schedules next to rooms [python, js, ansible]
+\item A project for managing programming tasks (used to this day by me and some of my coworkers) [golang, react]
+\item A task worker for network management [python]
+\item A search engine/archive - a sizeable project with many modules [python, golang, react]
 \end{itemize}}
-\cventry{2015}{Software engineering intern}{Intel}{Gdańsk}{}{Tweaking build systems, merging modules [c, cpp, Makefile, CMake]}
+\cventry{2015}{Software engineering intern}{Intel}{Gdańsk}{}{Tweaking build systems, merging modules [C, C++, Makefile, CMake]}
 \subsection{University projects}
 \textit{(as project manager)}
 \begin{itemize}
@@ -90,28 +90,31 @@ Projects include (but are not limited to):%
 \item 10 months, 4 people, a notification system with frontend in Android [java, python]
 \end{itemize}
 
+\pagebreak
+
 \section{Languages}
-\cvitemwithcomment{English}{fluent}{}
-\cvitemwithcomment{French}{basic}{}
-\cvitemwithcomment{Polish}{native}{}
+\cvitemwithcomment{English}{Fluent}{}
+\cvitemwithcomment{French}{Basic}{}
+\cvitemwithcomment{Polish}{Native}{}
 
 \section{Computer skills}
-\cvdoubleitem{golang}{good}{python}{good}
-\cvdoubleitem{javascript, typescript}{good}{sql}{medium}
-\cvdoubleitem{c++}{medium}{java}{medium}
-\cvdoubleitem{bash}{medium}{php, R}{basic}
+\cvdoubleitem{Go}{Good (3 years)}{Python}{Good (5 years)}
+\cvdoubleitem{Javascript, Typescript}{Good (3 years)}{SQL}{Medium (4 years)}
+\cvdoubleitem{C++}{Medium}{Java}{Medium}
+\cvdoubleitem{Bash}{Medium}{PHP, R}{Basic}
 
 
 \cvitem{Frameworks}{Qt, Django, Flask, Android, Angular, React}
-\cvitem{Databases}{mysql, postgresql, elasticsearch}
-\cvitem{Toolchains}{msvc, gcc + Makefile, CMake, webpack}
-\cvitem{cvs}{git, perforce, svn}
-\cvitem{operating systems}{Linux [good], Windows [medium]}
+\cvitem{Databases}{MySQL, PostgreSQL, Elasticsearch}
+\cvitem{Toolchains}{MSVC, gcc + Makefile, CMake, webpack, ng}
+\cvitem{CVS}{Git, Perforce, SVN}
+\cvitem{Operating systems}{Linux [good], Windows [medium]}
 
 \section{Interests}
-\cvitem{Filmmaking}{a few minor productions, an ad for a University organization}
+\cvitem{Filmmaking/VFX}{a few minor productions, an ad for a University organization (After Effects, DaVinci Resolve)}
+\cvitem{Graphics/Photography}{Photoshop, Lightroom, GIMP}
 \cvitem{Student council}{I help with finances, applications for funding and such}
-\cvitem{Writing}{I have written a few short stories}
+\cvitem{Writing}{I wrote numerous short stories and a novel}
 
 %\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
 \end{document}
